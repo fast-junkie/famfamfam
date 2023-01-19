@@ -49,8 +49,10 @@ Note the included `archive` directory contains the last known zip files I had in
 SO... first I ripped the `exif` data from each image using ExifTool.
 
 ```
-ExifTool is a platform-independent Perl library plus a command-line application for reading, writing and editing meta information in a wide variety of files.
-                                        ~ Phil Harvey (exiftool.org)
+ExifTool is a platform-independent Perl library plus a 
+command-line application for reading, writing and editing 
+meta information in a wide variety of files.
+~ Phil Harvey (exiftool.org)
 ```
 And yes...! I did use the verboten `-all=` flag, see the below example.
 
@@ -122,4 +124,4 @@ npm run build // it'll get you there...
 ```
 
 ## Why
-Good damn question...
+Great damn question...
