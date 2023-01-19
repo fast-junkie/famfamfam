@@ -1,0 +1,21 @@
+{
+  "name": "fj-famfamfam",
+  "description": "famfamfam.com icons and flags as CSS base64 data...",
+  "version": "0.5.7",
+  "author": "Fast Junkie <fj-development@use.startmail.com>",
+  "license": "copyleft-next-0.3.1",
+  "scripts": {
+    "css-famfamfam-flag": "sass --no-source-map src/scss/famfamfam.scss:dist/fj.famfamfam-min.css --style compressed",
+    "css-famfamfam-silk": "sass --no-source-map src/scss/famfamfam-silk.scss:dist/fj.famfamfam-silk-min.css --style compressed",
+    "css-famfamfam": "sass --no-source-map src/scss/famfamfam-flag.scss:dist/fj.famfamfam-flag-min.css --style compressed",
+    "css-build": "npm run css-famfamfam-flag && npm run css-famfamfam-silk && npm run css-famfamfam",
+    "css-watch": "onchange 'src/sass/**/*.scss' -- npm run css-build",
+    "watch": "npm-run-all --parallel *-watch",
+    "build": "npm install && npm run css-build"
+  },
+  "devDependencies": {
+    "npm-run-all": "4.1.5",
+    "onchange": "7.1.0",
+    "sass": "1.57.1"
+  }
+}
